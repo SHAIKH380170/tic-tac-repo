@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Doodle+Triangles&family=Rubik+Wet+Paint&display=swap');
+
+@media only screen and (max-width: 600px) {
+    body {
+     
+    }
+  }
+  @keyframes rainbow {
+	from, to { box-shadow: 0 0 15px 0 red }
+	16% { box-shadow: 0 0 25px 0  yellow }
+	32% { box-shadow: 0 0 25px 0  green }
+	48% { box-shadow: 0 0 25px 0  aqua }
+	64% { box-shadow: 0 0 25px 0  blue }
+	80% { box-shadow: 0 0 25px 0  fuchsia }}
+  
+*{
+    margin: 0;
+    padding: 0;
+   
+}
+
+
+
+nav ul
+{
+    background-color: aquamarine;
+    list-style: none;
+    font-family: 'Rubik Wet Paint', system-ui;
+    height: 7vw;
+    font-size: 5vw;
+    text-align: center;
+
+}
+
+.main{
+   
+    display:flex;
+    justify-content: center;
+    margin-top: 50px;
+   
+
+   
+
+}
+.box
+{
+    display: grid;
+    grid-template-rows: repeat(3 ,5vw);
+    grid-template-columns: repeat(3 ,5vw);
+   
+    font-family: 'Rubik Doodle Triangles', system-ui;
+    font-family: 'Rubik Wet Paint', system-ui;
+
+
+}
+
+.head{
+    font-family: 'Rubik Doodle Triangles', system-ui;
+    font-family: 'Rubik Wet Paint', system-ui;
+    text-align: center;
+}
+
+.input{
+    border:2px solid black;
+    font-size: 3vw;
+    text-align: center;
+}
+
+.imgbox
+{
+    display: none;
+}
+
+
+/*border remove */
+.bt-0{
+    border-top: 0;
+}
+.bb-0{
+    border-bottom: 0;
+}
+.bl-0{
+    border-left: 0;
+}
+.br-0{
+    border-right: 0;
+}
+
+/*restart button */
+
+.restartbtn{
+    display: flex;
+    justify-content: center;
+    margin-top: 4vw;
+}
+
+#resart
+{
+    background-color: rgb(51, 146, 201);
+    height: 5vw;
+    width: 20vw;
+    border-radius: 5vw;
+    animation: rainbow 3s infinite;
+   
+
+}
+
+.input:hover{
+    color: gray;
+    cursor: pointer;
+    background-color: aquamarine;
+}
+
+
+
+#help{
+    text-align: center;
+    margin-top: 10vw;
+    text-transform: uppercase;
+
+}
